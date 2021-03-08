@@ -70,5 +70,17 @@ namespace ThemeWrap1
                 fe.RequestedTheme = Theme;
             });
         }
+
+        private void AddBTN_Click(object sender, RoutedEventArgs e)
+        {
+            var time = DateTimeOffset.Now;
+            var tb = new TextBlock()
+            {
+                Text = $"Added at {time}",
+                Margin = new Thickness(12),
+            };
+
+            StackP.Children.Add(tb);
+        }
     }
 }

@@ -14,6 +14,9 @@ using Windows.UI.Xaml.Media;
 
 namespace ThemeWrap1
 {
+    //Wrapper Control to allow Changing RequestedTheme at the Grid level
+    //RequestedTheme is only applied if the FrameworkElement has a Template.  So Wrap adds a Template to wrap
+    //around grids or other panels.
     [ContentProperty(Name = "Children")]
     public sealed class Wrap : Control
     {
@@ -32,6 +35,7 @@ namespace ThemeWrap1
         public Wrap()
         {
             this.DefaultStyleKey = typeof(Wrap);
+            //instance Grid to get a UIElementCollection.  UIElementCollection has no exposed constructor.
             Grid tempgrid = new Grid();
             Children = tempgrid.Children;
             tempgrid = null;
@@ -40,8 +44,9 @@ namespace ThemeWrap1
         protected override void OnApplyTemplate()
         {
             base.OnApplyTemplate();
+            //Get the Template Grid and Move the Children.
             if (GetTemplateChild("BaseG") is Grid gd)
-            {
+            {             
                 var clist = Children.ToList();
                 Children.Clear();
                 foreach (var item in clist)
