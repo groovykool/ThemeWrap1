@@ -1,0 +1,41 @@
+﻿<Page x:Class="ThemeWrap1.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:ThemeWrap1"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <ComboBox x:Name="CB1"
+                      Header="Select Wrap Theme"
+                      Margin="20"
+                      SelectedIndex="0"
+                      SelectionChanged="CB1_SelectionChanged">
+                <x:String>Default</x:String>
+                <x:String>Light</x:String>
+                <x:String>Dark</x:String>
+            </ComboBox>
+        </Grid>
+        <local:Wrap x:Name="ApplyTheme"
+                    Grid.Column="1">
+            <Grid Background="{ThemeResource SystemListAccentMediumColor}">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock FontSize="20"
+                               FontWeight="ExtraBold"
+                               TextWrapping="Wrap"
+                               Margin="12"
+                               Text="This is some Text" />
+                    <Button  Margin="12"
+                             Content="Press Me" />
+                </StackPanel>
+            </Grid>
+        </local:Wrap>
+    </Grid>
+</Page>
