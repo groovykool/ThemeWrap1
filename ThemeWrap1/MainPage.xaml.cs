@@ -38,12 +38,15 @@ namespace ThemeWrap1
                 {
                     case 0:
                         await SetRequestedThemeAsync("Default", ApplyTheme);
+                        await SetRequestedThemeAsync("Default", ApplyTheme2);
                         break;
                     case 1:
                         await SetRequestedThemeAsync("Light", ApplyTheme);
+                        await SetRequestedThemeAsync("Light", ApplyTheme2);
                         break;
                     case 2:
                         await SetRequestedThemeAsync("Dark", ApplyTheme);
+                        await SetRequestedThemeAsync("Dark", ApplyTheme2);
                         break;
                 }
             }
@@ -81,6 +84,15 @@ namespace ThemeWrap1
             };
 
             StackP.Children.Add(tb);
+
+            tb = new TextBlock()
+            {
+                Text = $"Added at {time}",
+                Margin = new Thickness(12),
+            };
+
+            StackP2.Children.Add(tb);
+
         }
     }
 }

@@ -41,7 +41,9 @@
             Grid.Column="1"
             Margin="4">
             <Grid
-                Background="{ThemeResource SystemListAccentMediumColor}">
+                Background="{ThemeResource SystemListAccentMediumColor}"
+                BorderBrush="{ThemeResource SystemBaseHighColor}"
+                BorderThickness="4">
                 <StackPanel
                     x:Name="StackP"
                     Orientation="Vertical">
@@ -71,13 +73,15 @@
             <StackPanel
                 x:Name="StackP2"
                 Orientation="Vertical"
-                Background="{ThemeResource SystemListAccentMediumColor}">
+                Background="{ThemeResource SystemListAccentLowColor}"
+                BorderBrush="{ThemeResource SystemBaseMediumColor}"
+                BorderThickness="4">
                 <TextBlock
                     FontSize="20"
                     FontWeight="ExtraBold"
                     TextWrapping="Wrap"
                     Margin="12"
-                    Text="This is some Text" />
+                    Text="This is some Text"/>
                 <Button
                     Margin="12"
                     Content="Press Me" />
