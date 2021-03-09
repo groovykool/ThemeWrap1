@@ -7,11 +7,180 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Page.Resources>
+        <SolidColorBrush
+            x:Key="SystemAltHighColor"
+            Color="{ThemeResource SystemAltHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemAltLowColor"
+            Color="{ThemeResource SystemAltLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemAltMediumColor"
+            Color="{ThemeResource SystemAltMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemAltMediumHighColor"
+            Color="{ThemeResource SystemAltMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemAltMediumLowColor"
+            Color="{ThemeResource SystemAltMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemBaseHighColor"
+            Color="{ThemeResource SystemBaseHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemBaseLowColor"
+            Color="{ThemeResource SystemBaseLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemBaseMediumColor"
+            Color="{ThemeResource SystemBaseMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemBaseMediumHighColor"
+            Color="{ThemeResource SystemBaseMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemBaseMediumLowColor"
+            Color="{ThemeResource SystemBaseMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeAltLowColor"
+            Color="{ThemeResource SystemChromeAltLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeBlackHighColor"
+            Color="{ThemeResource SystemChromeBlackHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeBlackLowColor"
+            Color="{ThemeResource SystemChromeBlackLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeBlackMediumLowColor"
+            Color="{ThemeResource SystemChromeBlackMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeBlackMediumColor"
+            Color="{ThemeResource SystemChromeBlackMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeDisabledHighColor"
+            Color="{ThemeResource SystemChromeDisabledHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeDisabledLowColor"
+            Color="{ThemeResource SystemChromeDisabledLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeHighColor"
+            Color="{ThemeResource SystemChromeHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeLowColor"
+            Color="{ThemeResource SystemChromeLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeMediumColor"
+            Color="{ThemeResource SystemChromeMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeMediumLowColor"
+            Color="{ThemeResource SystemChromeMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeWhiteColor"
+            Color="{ThemeResource SystemChromeWhiteColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeGrayColor"
+            Color="{ThemeResource SystemChromeGrayColor}" />
+        <SolidColorBrush
+            x:Key="SystemListLowColor"
+            Color="{ThemeResource SystemListLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemListMediumColor"
+            Color="{ThemeResource SystemListMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemErrorTextColor"
+            Color="{ThemeResource SystemErrorTextColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeAltMediumHighColor"
+            Color="{ThemeResource SystemChromeAltMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeAltHighColor"
+            Color="{ThemeResource SystemChromeAltHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealAltHighColor"
+            Color="{ThemeResource SystemRevealAltHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealAltLowColor"
+            Color="{ThemeResource SystemRevealAltLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealAltMediumColor"
+            Color="{ThemeResource SystemRevealAltMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealAltMediumHighColor"
+            Color="{ThemeResource SystemRevealAltMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealAltMediumLowColor"
+            Color="{ThemeResource SystemRevealAltMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealBaseHighColor"
+            Color="{ThemeResource SystemRevealBaseHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealBaseLowColor"
+            Color="{ThemeResource SystemRevealBaseLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealBaseMediumColor"
+            Color="{ThemeResource SystemRevealBaseMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealBaseMediumHighColor"
+            Color="{ThemeResource SystemRevealBaseMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealBaseMediumLowColor"
+            Color="{ThemeResource SystemRevealBaseMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeAltLowColor"
+            Color="{ThemeResource SystemRevealChromeAltLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeBlackHighColor"
+            Color="{ThemeResource SystemRevealChromeBlackHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeBlackLowColor"
+            Color="{ThemeResource SystemRevealChromeBlackLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeBlackMediumLowColor"
+            Color="{ThemeResource SystemRevealChromeBlackMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeBlackMediumColor"
+            Color="{ThemeResource SystemRevealChromeBlackMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeHighColor"
+            Color="{ThemeResource SystemRevealChromeHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeLowColor"
+            Color="{ThemeResource SystemRevealChromeLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeMediumColor"
+            Color="{ThemeResource SystemRevealChromeMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeMediumLowColor"
+            Color="{ThemeResource SystemRevealChromeMediumLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeWhiteColor"
+            Color="{ThemeResource SystemRevealChromeWhiteColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealChromeGrayColor"
+            Color="{ThemeResource SystemRevealChromeGrayColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealListLowColor"
+            Color="{ThemeResource SystemRevealListLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemRevealListMediumColor"
+            Color="{ThemeResource SystemRevealListMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemChromeMediumHighColor"
+            Color="{ThemeResource SystemChromeMediumHighColor}" />
+        <SolidColorBrush
+            x:Key="SystemAccentColor"
+            Color="{ThemeResource SystemAccentColor}" />
+        <SolidColorBrush
+            x:Key="SystemListAccentLowColor"
+            Color="{ThemeResource SystemListAccentLowColor}" />
+        <SolidColorBrush
+            x:Key="SystemListAccentMediumColor"
+            Color="{ThemeResource SystemListAccentMediumColor}" />
+        <SolidColorBrush
+            x:Key="SystemListAccentHighColor"
+            Color="{ThemeResource SystemListAccentHighColor}" />
+    </Page.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition
-                Width="200" />
+                Width="400" />
             <ColumnDefinition />
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
@@ -34,6 +203,69 @@
                     Margin="20"
                     Content="Add TextBox"
                     Click="AddBTN_Click" />
+                <ComboBox
+                    x:Name="CB2"
+                    Header="Select BackGround Brush"
+                    Margin="20"
+                    SelectedIndex="0"
+                    SelectionChanged="CB2_SelectionChanged">
+                    <x:String>SystemAltHighColor</x:String>
+                    <x:String>SystemAltLowColor</x:String>
+                    <x:String>SystemAltMediumColor</x:String>
+                    <x:String>SystemAltMediumHighColor</x:String>
+                    <x:String>SystemAltMediumLowColor</x:String>
+                    <x:String>SystemBaseHighColor</x:String>
+                    <x:String>SystemBaseLowColor</x:String>
+                    <x:String>SystemBaseMediumColor</x:String>
+                    <x:String>SystemBaseMediumHighColor</x:String>
+                    <x:String>SystemBaseMediumLowColor</x:String>
+                    <x:String>SystemChromeAltLowColor</x:String>
+                    <x:String>SystemChromeBlackHighColor</x:String>
+                    <x:String>SystemChromeBlackLowColor</x:String>
+                    <x:String>SystemChromeBlackMediumLowColor</x:String>
+                    <x:String>SystemChromeBlackMediumColor</x:String>
+                    <x:String>SystemChromeDisabledHighColor</x:String>
+                    <x:String>SystemChromeDisabledLowColor</x:String>
+                    <x:String>SystemChromeHighColor</x:String>
+                    <x:String>SystemChromeLowColor</x:String>
+                    <x:String>SystemChromeMediumColor</x:String>
+                    <x:String>SystemChromeMediumLowColor</x:String>
+                    <x:String>SystemChromeWhiteColor</x:String>
+                    <x:String>SystemChromeGrayColor</x:String>
+                    <x:String>SystemListLowColor</x:String>
+                    <x:String>SystemListMediumColor</x:String>
+                    <x:String>SystemErrorTextColor</x:String>
+                    <x:String>SystemChromeAltMediumHighColor</x:String>
+                    <x:String>SystemChromeAltHighColor</x:String>
+                    <x:String>SystemRevealAltHighColor</x:String>
+                    <x:String>SystemRevealAltLowColor</x:String>
+                    <x:String>SystemRevealAltMediumColor</x:String>
+                    <x:String>SystemRevealAltMediumHighColor</x:String>
+                    <x:String>SystemRevealAltMediumLowColor</x:String>
+                    <x:String>SystemRevealBaseHighColor</x:String>
+                    <x:String>SystemRevealBaseLowColor</x:String>
+                    <x:String>SystemRevealBaseMediumColor</x:String>
+                    <x:String>SystemRevealBaseMediumHighColor</x:String>
+                    <x:String>SystemRevealBaseMediumLowColor</x:String>
+                    <x:String>SystemRevealChromeAltLowColor</x:String>
+                    <x:String>SystemRevealChromeBlackHighColor</x:String>
+                    <x:String>SystemRevealChromeBlackLowColor</x:String>
+                    <x:String>SystemRevealChromeBlackMediumLowColor</x:String>
+                    <x:String>SystemRevealChromeBlackMediumColor</x:String>
+                    <x:String>SystemRevealChromeHighColor</x:String>
+                    <x:String>SystemRevealChromeLowColor</x:String>
+                    <x:String>SystemRevealChromeMediumColor</x:String>
+                    <x:String>SystemRevealChromeMediumLowColor</x:String>
+                    <x:String>SystemRevealChromeWhiteColor</x:String>
+                    <x:String>SystemRevealChromeGrayColor</x:String>
+                    <x:String>SystemRevealListLowColor</x:String>
+                    <x:String>SystemRevealListMediumColor</x:String>
+                    <x:String>SystemAccentColor</x:String>
+                    <x:String>SystemListAccentLowColor</x:String>
+                    <x:String>SystemListAccentMediumColor</x:String>
+                    <x:String>SystemListAccentHighColor</x:String>
+                    
+                </ComboBox>
             </StackPanel>
         </Grid>
         <local:Wrap
@@ -41,7 +273,8 @@
             Grid.Column="1"
             Margin="4">
             <Grid
-                Background="{ThemeResource SystemListAccentMediumColor}"
+                x:Name="MainGrid"
+                Background="{ThemeResource SystemAltHighColor}"
                 BorderBrush="{ThemeResource SystemBaseHighColor}"
                 BorderThickness="4">
                 <StackPanel
@@ -81,7 +314,7 @@
                     FontWeight="ExtraBold"
                     TextWrapping="Wrap"
                     Margin="12"
-                    Text="This is some Text"/>
+                    Text="This is some Text" />
                 <Button
                     Margin="12"
                     Content="Press Me" />

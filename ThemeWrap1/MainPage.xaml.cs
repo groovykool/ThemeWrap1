@@ -27,6 +27,7 @@ namespace ThemeWrap1
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
 
         private async void CB1_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -93,6 +94,17 @@ namespace ThemeWrap1
 
             StackP2.Children.Add(tb);
 
+        }
+
+        private void CB2_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (MainGrid != null && MainGrid.IsLoaded)
+            {
+                var selection = CB2.SelectedIndex;
+                var brsh = (SolidColorBrush)this.Resources[(string)CB2.SelectedItem];
+                MainGrid.Background = brsh;
+
+            }
         }
     }
 }
